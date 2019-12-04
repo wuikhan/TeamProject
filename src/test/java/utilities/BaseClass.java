@@ -22,14 +22,14 @@ public class BaseClass {
 	public static ExtentTest test;
 
 	public static void openBrowser() {
-		if(System.getProperty("os.name")=="Mac OS X") {
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-mac");
+		if (System.getProperty("os.name") == "Mac OS X") {
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-mac");
 		} else {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-windows.exe");
 		}
-//		ChromeOptions option = new ChromeOptions();
-//		option.addArguments("window-size=1400,800");
-//		option.addArguments("headless");
+		// ChromeOptions option = new ChromeOptions();
+		// option.addArguments("window-size=1400,800");
+		// option.addArguments("headless");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
@@ -47,6 +47,5 @@ public class BaseClass {
 		// Step 4: Copy the source file to the destination location
 		FileUtils.copyFile(srcFile, destFile);
 	}
-
 
 }
