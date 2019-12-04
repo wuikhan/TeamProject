@@ -15,6 +15,7 @@ public class LoginTest extends BaseClass {
 	@Given("^I open chrome browser$")
 	public void i_open_chrome_browser() throws IOException {
 		openBrowser();
+		System.out.println("test passed");
 	}
 
 	@Given("^I go to salesforce home page$")
