@@ -7,4 +7,5 @@ Feature: Test Salesforce Contact Creation
     And I enter username as "test.user@gmail.com.test"
     And I enter password as "Welcome1"
     When I click the login button
+    And I quit
     
