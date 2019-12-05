@@ -27,10 +27,10 @@ public class BaseClass {
 		} else {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-windows.exe");
 		}
-		// ChromeOptions option = new ChromeOptions();
-		// option.addArguments("window-size=1400,800");
-		// option.addArguments("headless");
-		driver = new ChromeDriver();
+		 ChromeOptions option = new ChromeOptions();
+		 option.addArguments("window-size=1400,800");
+		 option.addArguments("headless");
+		driver = new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 
