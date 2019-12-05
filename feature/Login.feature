@@ -6,7 +6,7 @@ Feature: Test Salesforce login functionality
     Given I open chrome browser
     And I go to salesforce home page
     And I enter username as "test.user@gmail.com.test"
-    And I enter password as "Welcome1"
+    And I enter password as "Welcome"
     When I click the login button
     Then I see the dashboard
 
