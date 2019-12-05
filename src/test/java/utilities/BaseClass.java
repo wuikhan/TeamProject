@@ -22,11 +22,11 @@ public class BaseClass {
 	public static ExtentTest test;
 
 	public static void openBrowser() {
-		if (System.getProperty("os.name") == "Mac OS X") {
+//		if (System.getProperty("os.name") == "Mac OS X") {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-mac");
-		} else {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-windows.exe");
-		}
+//		} else {
+//			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver-windows.exe");
+//		}
 		 ChromeOptions option = new ChromeOptions();
 		 option.addArguments("window-size=1400,800");
 		 option.addArguments("headless");
