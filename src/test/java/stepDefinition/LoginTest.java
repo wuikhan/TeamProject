@@ -21,6 +21,7 @@ public class LoginTest extends BaseClass {
 	@Given("^I go to salesforce home page$")
 	public void i_go_to_salesforce_home_page() {
 		driver.get("https://login.salesforce.com");
+		Assert.assertTrue(false);
 	}
 
 	@Given("^I enter username as \"([^\"]*)\"$")
